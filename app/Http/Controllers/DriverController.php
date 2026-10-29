@@ -72,7 +72,7 @@ class DriverController extends Controller
 
     public function destroy(Driver $driver)
     {
-        $driver->delete();
+         $driver->delete();
 
         return redirect()->route('drivers.index')
             ->with('success', 'Data driver berhasil dihapus!');
